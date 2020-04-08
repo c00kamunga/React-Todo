@@ -1,4 +1,6 @@
 import React from 'react';
+import { toDo } from "./components/Todo"
+import TodoForm from "./components/TodoForm";
 
 class App extends React.Component {
 
@@ -12,9 +14,12 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
       <div>
         <h2>Welcome to your Todo App!</h2>
       </div>
+      <TodoForm/>
+      </>
     );
   }
 }
